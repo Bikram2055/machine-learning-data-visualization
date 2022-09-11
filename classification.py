@@ -13,13 +13,13 @@ data1 = pd.DataFrame(data=np.c_[iris['data'], iris['target']],
                      columns=iris['feature_names'] + ['target'])
 print(data1.head())
 
-# understanding data
-# print(data1.describe())
-# print(data1.columns)
-# print(data1.shape)
-# print(data1.isnull().sum())
-# print(data1.info())
-# print(data1['target'].unique().sum())
+understanding data
+print(data1.describe())
+print(data1.columns)
+print(data1.shape)
+print(data1.isnull().sum())
+print(data1.info())
+print(data1['target'].unique().sum())
 data2 = data1.drop(columns='target')
 
 scale = MinMaxScaler()
